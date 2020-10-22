@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -23,20 +23,20 @@
   
         <nav>
           <ul class="header__menu list">
-            <li class="nav-li"><a href="./index.html" class=" link">Студия</a></li>
-            <li class="nav-li"><a href="./portfolio.html" class="header__special link">Портфолио</a></li>
-            <li class="nav-li"><a href="#Контакты" class="link">Контакты</a></li>
+            <li class="header__item"><a href="./index.html" class=" link">Студия</a></li>
+            <li class="header__item"><a href="./portfolio.html" class="header__special link">Портфолио</a></li>
+            <li class="header__item"><a href="#Контакты" class="link">Контакты</a></li>
           </ul>
         </nav>
   
         <ul class="header__auth list">
-          <li><a href="mailto:info@devstudio.com" class="header__auth_item mail">
-              <svg class="header__auth_icon" width="16px" height="12">
+          <li><a href="mailto:info@devstudio.com" class="header__auth-item header__auth-item_mail">
+              <svg class="header__auth-icon" width="16px" height="12">
                 <use href="./icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="header__auth_item phone">
-              <svg class="header__auth_icon" width="16px" height="12">
+          <li><a href="tel:+380961111111" class="header__auth-item header__auth-item_phone">
+              <svg class="header__auth-icon" width="16px" height="12">
                 <use href="./icons/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></li>
@@ -45,7 +45,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <main>
     <!--Меню кнопок-->
     <section class="button">
       <div class="container">
@@ -61,7 +61,7 @@
         <!--Проекти-->
 
         <div class="projects">
-          <ul class="list">
+          <ul class="projects__list">
             <li class="project__item">
               <div class="projects__overlay">
                 <img class="img" src="./img/img8.png" alt="Photo" width="370">

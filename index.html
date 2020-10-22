@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
@@ -22,20 +22,20 @@
 
         <nav>
           <ul class="header__menu list">
-            <li class="nav-li"><a href="./index.html" class="header__special link">Студия</a></li>
-            <li class="nav-li"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="nav-li"><a href="#Контакты" class="link">Контакты</a></li>
+            <li class="header__item"><a href="./index.html" class="header__special link">Студия</a></li>
+            <li class="header__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="header__item"><a href="#Контакты" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="header__auth list">
-          <li><a href="mailto:info@devstudio.com" class="header__auth_item mail">
-              <svg class="header__auth_icon" width="16px" height="12">
+          <li><a href="mailto:info@devstudio.com" class="header__auth-item header__auth-item_mail">
+              <svg class="header__auth-icon" width="16px" height="12">
                 <use href="./icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="header__auth_item phone">
-              <svg class="header__auth_icon" width="16px" height="12">
+          <li><a href="tel:+380961111111" class="header__auth-item header__auth-item_phone">
+              <svg class="header__auth-icon" width="16px" height="12">
                 <use href="./icons/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></li>
@@ -132,24 +132,24 @@
 
     <!--Чем мы занимаемся-->
 
-    <section class="projects">
+    <section class="addons">
       <div class="container">
-        <h2 class="projects__title">Чем мы занимаемся</h2>
-        <ul class="projects__list list">
-          <li class="projects__item">
+        <h2 class="addons__title">Чем мы занимаемся</h2>
+        <ul class="addons__list list">
+          <li class="addons__item">
             <img src="./img/img1.png" alt="Photo" />
-            <div class="projects__overlay">
-              <h3 class="projects__overlay-title">Десктопные приложения</h3>
+            <div class="addons__overlay">
+              <h3 class="addons__overlay-title">Десктопные приложения</h3>
             </div>
           </li>
-          <li class="projects__item"><img src="./img/img2.png" alt="Photo" />
-            <div class="projects__overlay">
-              <h3 class="projects__overlay-title">Мобильные приложения</h3>
+          <li class="addons__item"><img src="./img/img2.png" alt="Photo" />
+            <div class="addons__overlay">
+              <h3 class="addons__overlay-title">Мобильные приложения</h3>
             </div>
           </li>
-          <li class="projects__item"><img src="./img/img3.png" alt="Photo" />
-            <div class="projects__overlay">
-              <h3 class="projects__overlay-title">Дизайнерские решения</h3>
+          <li class="addons__item"><img src="./img/img3.png" alt="Photo" />
+            <div class="addons__overlay">
+              <h3 class="addons__overlay-title">Дизайнерские решения</h3>
             </div>
           </li>
         </ul>
@@ -217,7 +217,7 @@
                   </svg>
                 </a></li>
             </ul>
-          </li class="ourteam-social">
+          </li>
           <li class="ourteam__list-item">
             <img class="img" src="./img/img6.jpg" alt="Photo" width="270" />
             <h3 class="ourteam__title-name">Николай Тарасов</h3>
