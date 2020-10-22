@@ -401,7 +401,7 @@ nav ul li:not(:last-child) {
   color: var(--title-text-color);
 }
 
-.ourteam .ourteam__title {
+.ourteam .ourteam__title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -411,6 +411,7 @@ nav ul li:not(:last-child) {
   letter-spacing: 0.03em;
 
   margin-bottom: 10px;
+  color: var(--title-text-color);
 }
 
 .ourteam .ourteam__info {
@@ -433,7 +434,7 @@ nav ul li:not(:last-child) {
   justify-content: center;
 }
 
-.ourteam__list_item {
+.ourteam__list-item {
   display: block;
   width: 370px;
   /* height: 368px; */
@@ -446,7 +447,7 @@ nav ul li:not(:last-child) {
   padding-bottom: 30px;
 }
 
-.ourteam__list_item:not(:last-child) {
+.ourteam__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -457,7 +458,7 @@ nav ul li:not(:last-child) {
 .ourteam__social-item:not(:last-child) {
   margin-right: 10px;
 }
-.ourteam__social_link {
+.ourteam__social-link {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -472,14 +473,14 @@ nav ul li:not(:last-child) {
   height: 20px;
 }
 
-.ourteam__social_link:hover,
-.ourteam__social_link:focus {
+.ourteam__social-link:hover,
+.ourteam__social-link:focus {
   background-color: var(--text-hover-focus);
   transition: 250ms var(--time-distribution-function);
 }
 
-.ourteam__social_link:hover .ourteam__social-icon,
-.ourteam__social_link:focus .ourteam__social-icon {
+.ourteam__social-link:hover .ourteam__social-icon,
+.ourteam__social-link:focus .ourteam__social-icon {
   fill: var(--secondary-text-color);
   transition: 250ms var(--time-distribution-function);
 }
@@ -506,12 +507,12 @@ nav ul li:not(:last-child) {
   margin-bottom: 50px;
 }
 
-.clients .list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.clients-item {
+.clients__list-item {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -522,21 +523,21 @@ nav ul li:not(:last-child) {
   align-items: center;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients__list-item:hover,
+.clients__list-item:focus {
   border-color: #2196f3;
 }
 
-.clients-icon {
+.clients__list-icon {
   fill: rgba(175, 177, 184, 1);
 }
 
-.clients-item:hover .clients-icon {
+.clients__list-item:hover .clients__list-icon {
   fill: var(--text-hover-focus);
   transition: 250ms var(--time-distribution-function);
 }
 
-.clients-item:focus .clients-icon {
+.clients__list-item:focus .clients__list-icon {
   fill: var(--text-hover-focus);
   transition: 250ms var(--time-distribution-function);
 }
@@ -549,7 +550,7 @@ nav ul li:not(:last-child) {
   padding-top: 60px;
 }
 
-.webstudio-footer {
+.contacts__webstudio {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -565,11 +566,11 @@ nav ul li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.logo {
+.contacts__logo {
   color: var(--white-color);
 }
 
-.street {
+.contacts__street {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
@@ -582,7 +583,7 @@ nav ul li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.foooter-info {
+.contacts__info {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
@@ -595,24 +596,19 @@ nav ul li:not(:last-child) {
   color: var(--footer-text);
 }
 
-.mmail {
+.contacts__mail {
   display: inline-block;
   margin-bottom: 9px;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.adress-footer {
+.contacts__adress {
   display: flex;
   flex-direction: column;
 }
 
 /* 2 СЕКЦІЯ */
 
-.footer-title {
+.footer__title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -628,17 +624,17 @@ nav ul li:not(:last-child) {
   justify-content: space-between;
   align-items: baseline;
 }
-
-.footerr-container {
+/* 222222222222222222222222222222222222 */
+.join {
   width: 206px;
 }
 
-.footerr-container .list {
+.join__list {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-link {
+.join__link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -648,25 +644,27 @@ nav ul li:not(:last-child) {
   align-items: center;
 }
 
-.footer-link:hover,
-.footer-link:hover {
+.join__link:hover,
+.join__link:hover {
   background-color: var(--text-hover-focus);
   transition: 250ms var(--time-distribution-function);
 }
 
-.footer-link .icon {
+.join__icon {
   fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 /* 3 СЕКЦІЯ */
 
-.footer-form {
+.subscribe__form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-input {
+.subscribe__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -678,7 +676,7 @@ nav ul li:not(:last-child) {
   color: var(--secondary-text-color);
 }
 
-.footer-btn {
+.subscribe__btn {
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -698,7 +696,7 @@ nav ul li:not(:last-child) {
   align-items: center;
 }
 
-.icon-send {
+.subscribe__icon-send {
   fill: #ffffff;
   margin-left: 10px;
 }
@@ -730,7 +728,7 @@ nav ul li:not(:last-child) {
   padding-bottom: 40px;
 }
 
-.close-modal {
+.modal__close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -746,8 +744,8 @@ nav ul li:not(:last-child) {
   justify-content: center;
   align-items: center;
 }
-.close-modal:hover,
-.close-modal:focus {
+.modal__closel:hover,
+.modal__close:focus {
   fill: var(--text-hover-focus);
 }
 .is-hidden {
@@ -758,7 +756,7 @@ nav ul li:not(:last-child) {
 
 /* ВІКНО КНОПКИ */
 
-.modal-form-field {
+.modal__form-field {
   position: relative;
   margin-bottom: 28px;
   width: 448px;
@@ -770,7 +768,7 @@ nav ul li:not(:last-child) {
   align-items: center;
 }
 
-.modal-form-input {
+.modal__form-input {
   width: 100%;
   height: 40px;
   left: 576px;
@@ -780,17 +778,17 @@ nav ul li:not(:last-child) {
   padding-left: 42px;
 }
 
-.modal-form-input:focus,
-.modal-form-message:focus {
+.modal__form-input:focus,
+.modal__form-message:focus {
   outline: none;
   border-color: var(--text-hover-focus);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal__form-input:focus + .modal__form-icon {
   fill: var(--text-hover-focus);
 }
 
-.modal-form-message {
+.modal__form-message {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -800,7 +798,7 @@ nav ul li:not(:last-child) {
   padding: 12px 16px;
 }
 
-.modal-form-icon {
+.modal__form-icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -808,14 +806,14 @@ nav ul li:not(:last-child) {
   left: 12px;
   transform: translateY(-50%);
 }
-.modal-form-field:hover .modal-form-icon {
+.modal__form-field:hover .modal__form-icon {
   fill: var(--text-hover-focus);
 }
-.modal-form-field:hover .modal-form-input {
+.modal__form-field:hover .modal__form-input {
   border-color: var(--text-hover-focus);
 }
 
-.modal-form-input-label {
+.modal__label {
   position: absolute;
   top: -18px;
   left: 0;
@@ -827,7 +825,7 @@ nav ul li:not(:last-child) {
   color: #757575;
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 30px;
 
   font-weight: bold;
@@ -838,7 +836,7 @@ nav ul li:not(:last-child) {
   color: var(--title-text-color);
 }
 
-.modal-form-label-check {
+.modal__label-check {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -860,7 +858,7 @@ nav ul li:not(:last-child) {
   overflow: hidden;
 }
 
-.modal-form-label-check::before {
+.modal__check::before {
   content: "";
   display: block;
   height: 15px;
@@ -869,18 +867,18 @@ nav ul li:not(:last-child) {
   margin-right: 8px;
 }
 
-.modal-form-label-check {
+.modal__check {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.modal-form-check:checked + .modal-form-label-check::before {
+.modal__form-check:checked + .modal__check::before {
   background-image: url("../icons/icon-check.png");
   border: none;
 }
 
-.modal-form-btn {
+.modal__form-btn {
   width: 200px;
   height: 50px;
   background: var(--text-hover-focus);
@@ -894,12 +892,12 @@ nav ul li:not(:last-child) {
   color: #ffffff;
 }
 
-.policy-field {
+.modal__policy {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.modal-form-btn:focus {
+.modal__form-btn:focus {
   background-color: rgba(24, 140, 232, 1);
 }
