@@ -102,7 +102,7 @@ body {
   transition: 250ms var(--time-distribution-function);
 }
 
-.header__menu .header__link::after {
+.header__menu .link::after {
   content: "";
   position: absolute;
   display: block;
@@ -116,7 +116,7 @@ body {
   transform: scaleX(0);
   transition: 250ms var(--time-distribution-function);
 }
-.header__special .header__link::after {
+.header__special .link::after {
   content: "";
   position: absolute;
   display: block;
