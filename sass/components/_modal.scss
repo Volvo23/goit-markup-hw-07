@@ -37,12 +37,6 @@
     transition: 250ms $time-distribution-function;
   }
 
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
   /* СЕКЦІЯ КНОПКИ */
 
   &__form-field {
@@ -146,7 +140,7 @@
   }
 
   &__checkbox:checked + &__label-policy::before {
-    background-image: url("/icons/icon-check.png");
+    background-image: url("../icons/icon-check.png");
     border: none;
   }
 
@@ -184,4 +178,9 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
