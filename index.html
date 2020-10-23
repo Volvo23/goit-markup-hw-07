@@ -398,49 +398,50 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button"  class="modal__close" data-modal-close>
-        <svg class="backdrop-icon" width="18px" height="18px">
+        <svg class="modal__close-icon" width="18px" height="18px">
           <use href="./icons/sprite.svg#icon-close-modal"></use>
         </svg>
       </button>
       <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
       <form action="" class="modal__form">
+        
         <div class="modal__form-field">
-          <input type="text" name="user-name" id="user-name" class="modal__form-input">
-          <svg class="modal__form-icon" width="18px" height="18px">
+          <label class="modal__label" for="user-name">Имя</label>
+          <input type="text" name="user-name" id="user-name" class="modal__input">
+          <svg class="modal__icon" width="18px" height="18px">
             <use href="./icons/sprite.svg#icon-person-black"></use>
           </svg>
-          <label class="modal__label" for="user-name">Имя</label>
-        
-      
         </div>
+
         <div class="modal__form-field">
-          <input type="tel" name="user-phone" id="user-phone" class="modal__form-input">
-          <svg class="modal__form-icon" width="18px" height="18px">
+          <label class="modal__label" for="user-phone">Телефон</label>
+          <input type="tel" name="user-phone" id="user-phone" class="modal__input">
+          <svg class="modal__icon" width="18px" height="18px">
             <use href="./icons/sprite.svg#icon-phone-black"></use>
           </svg>
-          <label class="modal__label" for="user-phone">Телефон</label>
+         
           
         </div>
         <div class="modal__form-field">
-          <input type="tel" name="user-mail" id="user-mail" class="modal__form-input">
-          <svg class="modal__form-icon" width="18px" height="18px">
+          <label class="modal__label" for="user-mail">Почта</label>
+          <input type="tel" name="user-mail" id="user-mail" class="modal__input">
+          <svg class="modal__icon" width="18px" height="18px">
             <use href="./icons/sprite.svg#icon-email-black"></use>
           </svg>
-          <label class="modal__label" for="user-mail">Почта</label>
-          
         </div>
 
         <div class="modal__form-field">
-          <textarea name="user-message" id="user-message" class="modal__form-message"></textarea>
-            <label class="modal__label" for="user-message">Коментарий</label>
+          <label class="modal__label" for="user-message">Коментарий</label>
+          <textarea name="user-message" id="user-message" class="modal__textarea"></textarea>
+            
 
         </div>
-        <div class="modal__policy">
+        <div class="modal__policy-field">
         
-          <input type="checkbox" name="user-policy" id="user-policy" class="modal__checkbox modal__visually-hidden">
-          <label for="user-policy" class="modal__label-check"><span>Соглашаюсь с рассылкой и принимаю <a href="#"> Условия договора</a></span></label>
+          <input type="checkbox" name="user-policy" id="user-policy" class="modal__checkbox visually-hidden">
+          <label for="user-policy" class="modal__label-policy"><span>Соглашаюсь с рассылкой и принимаю <a href="#"> Условия договора</a></span></label>
 
-          <button type="submit" class="modal__form-btn">Отправить</button>
+          <button type="submit" class="modal__btn">Отправить</button>
         </div>
       </form>
     </div>
